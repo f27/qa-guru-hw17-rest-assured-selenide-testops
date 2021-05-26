@@ -83,7 +83,7 @@ public class DriverHelper {
 
         if (isRemoteWebDriver()) {
             capabilities.setCapability("enableVNC", true);
-            capabilities.setCapability("enableVideo", true);
+            capabilities.setCapability("enableVideo", isVideoOn());
             Configuration.remote = getWebRemoteDriver();
         }
 
